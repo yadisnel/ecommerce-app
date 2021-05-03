@@ -1,5 +1,9 @@
-name: app
-description: Dtodo E-Commerce Platform
+name: ecommerce_app
+description: Ecommerce Flutter App.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -14,47 +18,29 @@ description: Dtodo E-Commerce Platform
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  sqflite: ^1.2.0
-  path_provider: ^1.5.1
-  flutter_svg: ^0.17.4
-  flutter_facebook_login: ^3.0.0
-  http: ^0.12.0+4
-  json_annotation: ^3.0.1
-  cached_network_image: ^2.2.0+1
-  rxdart: ^0.24.1
-  mqtt_client: ^7.1.0
-  uuid: ^2.0.4
-  async: ^2.4.1
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^1.0.2
+  amplify_flutter: '<1.0.0'
+  amplify_auth_cognito: '<1.0.0'
+  amplify_analytics_pinpoint: '<1.0.0'
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^1.8.1
-  json_serializable: ^3.3.0
-
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
-  assets:
-    - lib/assets/i18n/
-    - lib/assets/images/
-    - lib/assets/flags/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -63,8 +49,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
